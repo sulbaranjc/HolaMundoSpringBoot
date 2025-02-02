@@ -11,6 +11,7 @@ public class Controller {
 @GetMapping("/ping")
 public String ping() {
     String mensajeHTML = "<h1 style=\"color:blue;\">¡Pong!</h1>";
+    //System.out.println("¡Pong!");
     return mensajeHTML;
 }
 @GetMapping("/saludo1")
