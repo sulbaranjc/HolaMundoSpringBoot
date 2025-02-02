@@ -1,6 +1,7 @@
 package com.ilerna.HolaMundo;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,5 +22,10 @@ public String holaMundo() {
     public String holaMundoProfesor() {
         String mensajeHTML = "<h1 style=\"color:blue;\">¡Hola Mundo Profesor desde Spring Boot!</h1>";
         return mensajeHTML;
+    }
+    // Nuevo endpoint para recibir un nombre como parámetro
+    @GetMapping("/saludo")
+    public String saludo(@RequestParam(defaultValue = "Mundo") String nombre) {
+        return "<h1 style=\"color:blue;\">¡Hola " + nombre + " desde Spring Boot!</h1>";
     }
 }
