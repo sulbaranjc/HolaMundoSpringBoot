@@ -4,7 +4,6 @@
 Este es un proyecto básico de Spring Boot que sirve como introducción a la programación en Java con el framework Spring Boot. Implementa un servicio web REST con varias rutas que devuelven mensajes en formato HTML.
 
 ## Tecnologías Utilizadas
-- **Java 21**
 - **Spring Boot 3.4.2**
 - **Maven**
 - **IntelliJ IDEA (o cualquier IDE compatible con Spring Boot)**
@@ -13,7 +12,6 @@ Este es un proyecto básico de Spring Boot que sirve como introducción a la pro
 
 ### **1. Clonar el repositorio**
 ```sh
- git clone https://github.com/sulbaranjc/HolaMundoSpringBoot.git
  cd HolaMundoSpringBoot
 ```
 
